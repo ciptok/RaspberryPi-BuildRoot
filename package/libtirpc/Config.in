@@ -1,0 +1,12 @@
+config BR2_PACKAGE_LIBTIRPC
+	bool "libtirpc"
+	depends on !BR2_TOOLCHAIN_HAS_NATIVE_RPC
+	help
+	  Libtirpc is a port of Suns Transport-Independent RPC library
+	  to Linux.
+
+	  http://sourceforge.net/projects/libtirpc/
+
+config BR2_RPC_SUPPORT_AVAILABLE
+       bool
+       default y if (BR2_TOOLCHAIN_HAS_NATIVE_RPC || BR2_PACKAGE_LIBTIRPC)
