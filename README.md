@@ -45,7 +45,4 @@ Target directory used to make images is here:
 
 If you want to regenerate your image with your changes to target, just run make again.
 
-## Note: ##
-Right now the default setup downloads an external toolchain that only works with x86_64 systems.  It is also possible to change the configuration to build your own compatible toolchain, but for this you should consult the BuildRoot documentation.
-
 ### The Bsquask SDK is based on BuildRoot 2012.05 ###
