@@ -79,7 +79,7 @@ endef
 endif
 
 # If RPC is enabled then enable nfs mounts
-ifeq ($(BR2_INET_RPC),y)
+ifeq ($(BR2_TOOLCHAIN_HAS_NATIVE_RPC),y)
 define BUSYBOX_SET_RPC
 	$(call KCONFIG_ENABLE_OPT,CONFIG_FEATURE_MOUNT_NFS,$(BUSYBOX_BUILD_CONFIG))
 endef
