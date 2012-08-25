@@ -1,4 +1,4 @@
-QTDECLARATIVE_VERSION = master
+QTDECLARATIVE_VERSION = bc6456d722e7a23f145baf13b8d1c15f81513aad
 QTDECLARATIVE_SITE = git://gitorious.org/qt/qtdeclarative.git
 QTDECLARATIVE_SITE_METHOD = git
 QTDECLARATIVE_DEPENDENCIES = qtbase qtxmlpatterns qtjsbackend
