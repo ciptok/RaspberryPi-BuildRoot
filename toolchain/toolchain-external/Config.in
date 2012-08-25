@@ -3,8 +3,6 @@ if BR2_TOOLCHAIN_EXTERNAL
 choice
 	prompt "Toolchain"
 
-	select BR2_TOOLCHAIN_HAS_NATIVE_RPC
-	select BR2_TOOLCHAIN_HAS_NATIVE_RPC
 config BR2_TOOLCHAIN_EXTERNAL_LINARO_2012_04
 	bool "Linaro 2012.04"
 	depends on BR2_arm
