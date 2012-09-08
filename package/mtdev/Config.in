@@ -1,0 +1,4 @@
+config BR2_PACKAGE_MTDEV
+	bool "mtdev"
+	help
+            mtdev

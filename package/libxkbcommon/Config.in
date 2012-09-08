@@ -1,0 +1,5 @@
+config BR2_PACKAGE_LIBXKBCOMMON
+	bool "libxkbcommon"
+        depends on BR2_PACKAGE_XPROTO_XPROTO
+	help
+            libxkbcommon
