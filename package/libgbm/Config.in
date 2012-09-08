@@ -1,0 +1,4 @@
+config BR2_PACKAGE_LIBGBM
+	bool "libgbm"
+	help
+            libgbm library

@@ -3,8 +3,8 @@
 # cairo
 #
 #############################################################
-CAIRO_VERSION = 1.10.2
-CAIRO_SOURCE = cairo-$(CAIRO_VERSION).tar.gz
+CAIRO_VERSION = 1.12.2
+CAIRO_SOURCE = cairo-$(CAIRO_VERSION).tar.xz
 CAIRO_SITE = http://cairographics.org/releases
 CAIRO_INSTALL_STAGING = YES
 
@@ -35,6 +35,8 @@ CAIRO_CONF_ENV = ac_cv_func_posix_getpwuid_r=yes glib_cv_stack_grows=no \
 		ac_use_included_regex=no gl_cv_c_restrict=no
 
 CAIRO_DEPENDENCIES = host-pkg-config fontconfig pixman
+
+CAIRO_CONF_OPT += --enable-glesv2 --enable-xcb
 
 ifeq ($(BR2_PACKAGE_DIRECTFB),y)
 	CAIRO_CONF_OPT += --enable-directfb
